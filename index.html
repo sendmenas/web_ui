@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Web Payments</title>
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="web_payments_css.css" />
+</head>
+<body>
+	<div class="section">
+		<div class="fieldLabel">Withdrawal Type</div>
+		<div>
+			<div class="navSelector">
+				<div class="navItem">bank transfer</div>
+				<div class="navItem">prepaid card</div>
+				<div class="navItem">my cards</div>
+			</div>			
+		</div>
+	</div>
+	<div class="section">
+		<div class="fieldLabel">Debit Account</div>
+		<div class="accountInfo">
+			<div class="accountLeftSide">.... 1051</div>
+			<div class="accountRightSide">
+				<div class="amountContainer">
+					<div class="mainAmount">2.</div>
+					<div class="restAmount">98</div>
+				</div>
+				<div class="currencyIndicator">eur</div>
+				<div class="arrowContainer">
+					<div class="dropdownArrow"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="withdrawInfo">
+			<div class="withdrawInfoLeft">
+				<div class="fieldLabel">Amount</div>
+				<input class="withdrawInfoField" type="text" placeholder="Amount" />
+			</div>
+			<div class="withdrawInfoRight">
+				<div class="fieldLabel">Currency</div>
+				<div class="withdrawInfoField">
+					<div class="withdrawInfoFieldText">Choose...</div>
+					<div class="arrowContainer">
+						<div class="dropdownArrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="buttonContainer">
+			<div class="actionButton">proceed</div>					
+		</div>
+	</div>
+	<script src="WebPayments.js"></script>
+</body>
+</html>
