@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Add Card</title>
+	<link rel="stylesheet" href="../web_payments_css.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+	<div class="closeForm">
+		<div class="closeOne"></div>
+		<div class="closeTwo"></div>
+	</div>
+	<div class="section">
+		<div class="headerText">dukascopy payments europe</div>
+		<div class="innerSection">
+			<div class="timeContainer">
+				<div class="timeText">time left:</div>
+				<div class="timeTime">04:37</div>
+			</div>
+			<div class="sectionTag">deposit amount:</div>
+			<div class="splitInfoBlock">
+				<input class="roundedField infoLeft" type="number" min="0.1" placeholder="Amount" step="0.1" required>
+				<select class="roundedField infoRight">
+					<option value="eur">EUR</option>
+					<option value="usd">USD</option>
+				</select>
+			</div>
+		</div>
+		<div class="innerSection">
+			<div class="sectionTag">Bank card details</div>
+			<div class="cardIndicator">
+				<div class="cardType visaImg"></div>
+				<div class="cardType visaElectronImg"></div>
+				<div class="cardType maestroImg"></div>
+				<div class="cardType mastercardImg"></div>
+			</div>
+			<input type="number" placeholder="credit card number" class="roundedField" required>
+			<div>
+				<div class="sectionTag">card security code:</div>
+				<div  class="splitInfoBlock">
+					<input class="roundedField infoLeft" type="number" placeholder="CVV" required>
+					<div class="termsText infoRight">3 or 4 digit number printed on the back or front of bank cards</div>
+				</div>
+			</div>
+			<div>
+				<div class="sectionTag">expiration date:</div>
+				<div class="splitInfoBlock">
+					<select class="roundedField infoLeft">
+						<option value="">select month</option>
+					</select>
+					<select class="roundedField infoRight">
+						<option value="">select year</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="innerSection">
+			<div class="infoForm">
+				<div class="sectionTag">billing details:</div>
+				<input type="text" placeholder="carholder name" class="roundedField" required>
+				<input type="text" placeholder="street address" class="roundedField" required>
+				<input type="text" placeholder="address line 2" class="roundedField">
+				<input type="text" placeholder="city" class="roundedField" required/>
+				<input type="text" placeholder="postal code" class="roundedField" required>
+				<select name="" id="" class="roundedField" >
+					<option value="">select country</option>
+				</select>
+				<input type="text" placeholder="pone number" class="roundedField" required>
+				<input type="text" placeholder="e-mail address" class="roundedField" required>
+				<div class="radioButtonBlock">
+					<input type="checkbox" placeholder="save billing details" class="roundedField">
+					<div class="sectionTag">Save billing details</div>					
+				</div>
+			</div>
+		</div>
+		<div class="buttonContainer">
+			<div class="actionButton blueButton">submit</div>					
+		</div>
+	</div>
+	<div class="section">
+		<div class="sectionTag footerTerms">SIA "Dukascopy Payments". Lacplesa iela 20a-1, Riga, LV-1011, Latvia</div>			
+	</div>
+</body>
+</html>

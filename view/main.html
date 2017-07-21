@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Main</title>
+	<link rel="stylesheet" href="../web_payments_css.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<div class="authScreen"></div>
+	<div class="authContainer">
+		<div class="section">
+			<div class="authImage"></div>
+			<div class="requestCodeBlock" name="requestCodeBlock">
+				<div class="phoneContainer">
+					<div class="phoneInfoField">
+						<div class="countryCode">Code</div>
+						<input name="phoneNumber" type="text" class="phoneNumber" placeholder="Enter your phone" />
+					</div>
+				</div>
+				<div class="buttonContainer">
+					<div name="requestSmsCode" class="actionButton redButton">request</div>					
+				</div>				
+			</div>
+			<div class="verifyCodeBlock" name="verifyCodeBlock">
+				<input class="withdrawInfoField" name="codePin" type="text" placeholder="Enter your 6 digit code..." />
+				<input class="withdrawInfoField" name="password" type="password" placeholder="Password" />
+				<div class="buttonContainer">
+					<div name="login" class="actionButton redButton">login</div>					
+				</div>				
+				<div class="buttonContainer">
+					<div name="cancel" class="actionButton redButton">cancel</div>					
+				</div>				
+			</div>
+		</div>		
+	</div>
+</body>
+</html>
